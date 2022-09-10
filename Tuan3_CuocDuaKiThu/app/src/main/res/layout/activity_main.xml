@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/bgr"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBox
+        android:id="@+id/checkboxThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="20dp" />
+
+    <CheckBox
+        android:id="@+id/checkboxTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/checkboxThree"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="20dp" />
+
+    <CheckBox
+        android:id="@+id/checkboxOne"
+        android:layout_above="@id/checkboxTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"/>
+
+    <SeekBar
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@drawable/turtle_jump"
+        android:id="@+id/seekbarThree"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/checkboxThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp" />
+
+    <SeekBar
+        android:id="@+id/seekbarTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/checkboxThree"
+        android:layout_toRightOf="@id/checkboxTwo"
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@drawable/rooster_jump" />
+
+    <SeekBar
+        android:id="@+id/seekbarOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/checkboxTwo"
+        android:layout_toRightOf="@id/checkboxOne"
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@drawable/rabbit_jump" />
+
+    <ImageView
+        android:layout_width="1000dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/amazing_race"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="ĐIỂM SỐ"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:textColor="@color/red"/>
+
+    <TextView
+        android:id="@+id/textviewDiemso"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="100"
+        android:textColor="@color/teal_200"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/buttonPlay"
+        android:layout_centerInParent="true"
+        android:src="@drawable/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
